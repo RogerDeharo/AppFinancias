@@ -10,8 +10,9 @@
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="55, 55, 0, 0"/>
             </Border.StrokeShape>
-            <StackLayout HorizontalOptions="CenterAndExpand" Margin="0 ,150, 0, 0" Spacing="10">
-                
+            <StackLayout HorizontalOptions="FillAndExpand" Margin="0 ,150, 0, 0" Spacing="10" Padding="50, 0">
+                <Button Text="Criar Conta" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Login" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
         </Border>
     </Grid>
