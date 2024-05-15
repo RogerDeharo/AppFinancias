@@ -1,19 +1,19 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFinancias.MainPage"
-             BackgroundColor="#191A32"
+             BackgroundColor="White"
              Title="">
 
-    <ScrollView>
-        <StackLayout>
-            <Grid>
-                <Label Text="Email"
-                   TextColor="White"/>
-                <Entry x:Name="Email" 
-                   PlaceholderColor="White"
-                   TextColor="White"/>
-            </Grid>
-        </StackLayout>
-    </ScrollView>
+    <Grid RowDefinitions="120, *">
+        <Border Grid.Row="2" BackgroundColor="#191A32" HeightRequest="300"
+                Stroke="#191A32" StrokeThickness="1" VerticalOptions="End" Margin="-10, 0, -10, -10">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="55, 55, 0, 0"/>
+            </Border.StrokeShape>
+            <StackLayout HorizontalOptions="CenterAndExpand" Margin="0 ,150, 0, 0" Spacing="10">
+                
+            </StackLayout>
+        </Border>
+    </Grid>
 
 </ContentPage>
