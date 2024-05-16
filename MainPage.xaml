@@ -1,20 +1,37 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFinancias.MainPage"
-             BackgroundColor="White"
+             BackgroundColor="#191A32"
+             Shell.BackgroundColor="#191A32"
              Title="">
-
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Fill">
+            <Label
+                Text="My Finances"
+                FontFamily="interblack"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                VerticalOptions="Center"
+                HeightRequest="65"
+                FontSize="Medium" />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
     <Grid RowDefinitions="120, *">
-        <Border Grid.Row="2" BackgroundColor="#191A32" HeightRequest="300"
+            <Border Grid.Row="2" BackgroundColor="#323755" HeightRequest="300"
                 Stroke="#191A32" StrokeThickness="1" VerticalOptions="End" Margin="-10, 0, -10, -10">
-            <Border.StrokeShape>
-                <RoundRectangle CornerRadius="55, 55, 0, 0"/>
-            </Border.StrokeShape>
-            <StackLayout HorizontalOptions="FillAndExpand" Margin="0 ,150, 0, 0" Spacing="10" Padding="50, 0">
-                <Button Text="Criar Conta" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Login" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-        </Border>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="55, 55, 0, 0"/>
+                </Border.StrokeShape>
+                <Grid>
+                    <Label Text="Organize sua vida" TextColor="White" FontFamily="intermedium" FontSize="Title" HorizontalOptions="Center" Padding="0, 15" />
+                    <Label Text="financeira" TextColor="White" FontFamily="intermedium" FontSize="Title" HorizontalOptions="Center" Padding="0, 50"/>
+                    <Label Text="Cuide de seus orçamentos, e saiba" TextColor="White" FontFamily="intermedium" FontSize="Micro" HorizontalOptions="Center" Padding="0, 100"/>
+                    <Label Text="como você gasta seu dinheiro todo mês!" TextColor="White" FontFamily="intermedium" FontSize="Micro" HorizontalOptions="Center" Padding="0, 120"/>
+                    <StackLayout HorizontalOptions="FillAndExpand" Margin="0 ,180, 0, 0" Spacing="10" Padding="50, 0">
+                        <Button Text="Criar Conta" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#33E6F6"/>
+                        <Button Text="Fazer Login" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#323755"/>
+                    </StackLayout>
+                </Grid>
+            </Border>
     </Grid>
-
 </ContentPage>

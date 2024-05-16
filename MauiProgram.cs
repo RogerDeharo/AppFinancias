@@ -15,6 +15,8 @@ namespace AppFinancias
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("inter-black.ttf", "interblack");
+                    fonts.AddFont("inter-medium.ttf", "interemedium");
                 });
 
 #if DEBUG
