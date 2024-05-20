@@ -4,20 +4,10 @@
              BackgroundColor="#191A32"
              Shell.BackgroundColor="#191A32"
              Title="">
-    <Shell.TitleView>
-        <HorizontalStackLayout VerticalOptions="Fill">
-            <Label
-                Text="My Finances"
-                FontFamily="interblack"
-                TextColor="White"
-                VerticalTextAlignment="Center"
-                VerticalOptions="Center"
-                HeightRequest="65"
-                FontSize="Medium" />
-        </HorizontalStackLayout>
-    </Shell.TitleView>
-    <Grid RowDefinitions="120, *">
-            <Border Grid.Row="2" BackgroundColor="#323755" HeightRequest="300"
+    <Grid>
+        <Image Source="logo.png " Aspect="Center" Margin="0, -500, 0, 0"/>
+        <Grid RowDefinitions="120, *">
+            <Border Grid.Row="2" BackgroundColor="#3c3e66" HeightRequest="300"
                 Stroke="#191A32" StrokeThickness="1" VerticalOptions="End" Margin="-10, 0, -10, -10">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="55, 55, 0, 0"/>
@@ -33,5 +23,6 @@
                     </StackLayout>
                 </Grid>
             </Border>
+        </Grid>
     </Grid>
 </ContentPage>
