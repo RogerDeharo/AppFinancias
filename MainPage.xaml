@@ -19,7 +19,7 @@
                     <Label Text="como você gasta seu dinheiro todo mês!" TextColor="White" FontFamily="intermedium" FontSize="Micro" HorizontalOptions="Center" Padding="0, 120"/>
                     <StackLayout HorizontalOptions="FillAndExpand" Margin="0 ,180, 0, 0" Spacing="10" Padding="50, 0">
                         <Button Text="Criar Conta" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#33E6F6"/>
-                        <Button Text="Fazer Login" Clicked="btn_criarconta_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#3c3e66"/>
+                        <Button Text="Fazer Login" Clicked="btn_Login_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="#3c3e66"/>
                     </StackLayout>
                 </Grid>
             </Border>

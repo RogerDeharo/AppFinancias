@@ -75,6 +75,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CustomContols\OutlinedEntryControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Config.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
