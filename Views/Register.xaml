@@ -11,6 +11,7 @@
             <Label Text="Criar Conta" Padding="100, 40, 0, 0" TextColor="White" FontFamily="intermedium" FontSize="40"/>
             <Label Text="Crie uma nova conta" TextColor="White" Padding="120, 90, 0, 0" FontFamily="intermedium" FontSize="Subtitle"/>
         </Grid>
-        <customControls:OutlinedEntryControl Margin="0,100,0,0"/>
+        <customControls:OutlinedEntryControl Placeholder="First Name" Margin="0,100,0,0"/>
+        <customControls:OutlinedEntryControl Placeholder="Last Name" Margin="0, 20"/>
     </VerticalStackLayout>
 </ContentPage>

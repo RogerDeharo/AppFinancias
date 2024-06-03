@@ -5,7 +5,7 @@
              x:Name="this"
              x:Class="AppFinancias.CustomContols.OutlinedEntryControl">
     <Frame Grid.Row="0" Padding="8" BorderColor="Gray" BackgroundColor="Transparent" >
-        <Entry Text="{Binding Source={x:Reference this}, Path=}" TextColor="White"/>
+        <Entry x:Name="txtEntry" Focused="txtEntry_Focused" Unfocused="txtEntry_Unfocused" Text="{Binding Source={x:Reference this}, Path=Text}" TextColor="White"/>
     </Frame>
-    <Label Grid.Row="0" Margin="10, 0, 10, 0" TextColor="Gray" BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Text="First Name" />
+    <Label Grid.Row="0" FontSize="15" x:Name="lblPlaceholder" Margin="10, 0, 10, 0" TextColor="Gray"  Text="{Binding Source={x:Reference this}, Path=Placeholder}"  BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 </Grid>
