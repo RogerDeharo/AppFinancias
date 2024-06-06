@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFinancias.Views.Register"
-             xmlns:customControls="clr-namespace:AppFinancias.CustomContols"
+             xmlns:customControls="clr-namespace:AppFinancias.CustomControls"
              BackgroundColor="#191A32"
              Shell.BackgroundColor="#191A32"
              Title="">
@@ -11,7 +11,8 @@
             <Label Text="Criar Conta" Padding="100, 40, 0, 0" TextColor="White" FontFamily="intermedium" FontSize="40"/>
             <Label Text="Crie uma nova conta" TextColor="White" Padding="120, 90, 0, 0" FontFamily="intermedium" FontSize="Subtitle"/>
         </Grid>
-        <customControls:OutlinedEntryControl Placeholder="First Name" Margin="0,100,0,0"/>
-        <customControls:OutlinedEntryControl Placeholder="Last Name" Margin="0, 20"/>
+        <customControls:OutlinedEntryControl Placeholder="First Name"/>
+        <customControls:OutlinedEntryControl Placeholder="Last Name"/>
+        
     </VerticalStackLayout>
 </ContentPage>
