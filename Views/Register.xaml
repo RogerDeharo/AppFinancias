@@ -8,19 +8,21 @@
              Title="">
     <VerticalStackLayout>
         <Grid>
-            <Label Text="Criar Conta" Padding="100, 40, 0, 0" TextColor="White" FontFamily="intermedium" FontSize="40"/>
-            <Label Text="Crie uma nova conta" TextColor="White" Padding="120, 90, 0, 0" FontFamily="intermedium" FontSize="Subtitle"/>
+            <Label Text="Criar Conta" Padding="90, 20, 0, 0" TextColor="White" FontFamily="intermedium" FontSize="40"/>
+            <Label Text="Crie uma nova conta" TextColor="White" Padding="120, 70, 0, 0" FontFamily="intermedium" FontSize="Subtitle"/>
         </Grid>
-        <StackLayout Margin="0, 20" Spacing="20" Padding="50, 0">
+        <StackLayout Margin="0, 30" Spacing="20" Padding="50, 0">
             <customControls:OutlinedEntryControl Placeholder="Primeiro Nome" />
             <customControls:OutlinedEntryControl Placeholder="Ultimo Nome" />
             <customControls:OutlinedEntryControl Placeholder="Email" />
             <customControls:OutlinedEntryControl Placeholder="Senha" />
             <customControls:OutlinedEntryControl Placeholder="Confirmar Senha" />
         </StackLayout>
-        <StackLayout HorizontalOptions="FillAndExpand" Margin="0, 100, 0, 0" Spacing="10" Padding="50, 0">
+        <StackLayout HorizontalOptions="FillAndExpand" Margin="0, 40, 0, 0" Spacing="10" Padding="50, 0">
             <Button Text="Criar Conta" x:Name="criar_conta" Clicked="criar_conta_Clicked" BackgroundColor="#33E6F6"/>
             <Button Text="Voltar" x:Name="voltar" Clicked="voltar_Clicked" BackgroundColor="#3c3e66"/>
         </StackLayout>
+
+        <Label Text="Você já tem uma conta?" TextColor="White" FontFamily="intermedium" FontSize="Subtitle" Padding="90, 20, 0, 0"/>
     </VerticalStackLayout>
 </ContentPage>
